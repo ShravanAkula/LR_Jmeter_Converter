@@ -4,13 +4,12 @@
 
 **How to use the converter:**
 
-Download the zip file,
-Unzip to any desired location.
-Run “LR_Parsing.exe”
-Provide absolute path to the Loadrunner script
-Provide a location to save the logs and converted file.
-Converted requests are saved to “converted_lines.log”
-And the jmx is saved as output.jmx.
+1	Download the zip file.
+2.	Unzip to any desired location.
+3.	Run “LR_Parsing.exe”
+4.	Provide absolute path to the Loadrunner script
+5.	Provide a location to save the logs and converted file.
+6.	Converted requests are saved to “converted_lines.log”, the jmx is saved as output.jmx.
 
 **NOTE: warning/Errors will be displayed on the console and will not be saved to file**
 
