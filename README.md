@@ -36,6 +36,7 @@ Note: correlation and text checks are added as a parent node to the request.
 2.	Creates If and while condition with "true" as condition										
 3.	Reads complete Loadrunner file to process all the .c files 
 4.	CSV dataset read will be created with param names and file linking
+5.	Parameters are added to http_request_defaults and test plan to ease parameterization
 
 
 **Reach to Shravanakula@ymail.com for more details or enhancements**
