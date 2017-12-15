@@ -21,7 +21,6 @@ Note: correlation and text checks are added as a parent node to the request.
 **Known issues:**
 1.	Multiple line post (web_custom_request) are converted with missing “” and extra “\”
 2.	lr_start_transaction with "'" in the transaction name is throwing error
-3.	rearranging the samples is still required
 
 **Fixed issues:**
 
@@ -29,6 +28,7 @@ Note: correlation and text checks are added as a parent node to the request.
 2. 	web_reg_save_param is misinterpreted at times
 3.	ordinal in web_reg_save_param_regex										
 4. 	warning will be dispalyed if web_reg_find has save_count
+5.	Sample hirerarchy is managed while converting 
 
 **New features:**
 
