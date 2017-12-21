@@ -1,0 +1,101 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Introduction &#8212; LR_TO_Jmeter_conversion  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="LR_Parsing module" href="LR_Parsing.html" />
+    <link rel="prev" title="Welcome to LR_TO_Jmeter_conversion’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Loadrunner to Jmeter conversion is built in python2.7. The utility is capable of converting basic http/html methods in Loadrunner .c files to their equivalent Jmeter script.</p>
+<div class="section" id="how-to-use">
+<h2>How to use ?<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Run executable “LR_Parsing.exe” present in in dist/LR_Parsing</li>
+<li><dl class="first docutils">
+<dt>Provide inputs as requested</dt>
+<dd><ol class="first last loweralpha">
+<li>location of the LR file</li>
+<li>location to save the output</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li>Read through Warnings/errors listed on the console</li>
+</ol>
+</div>
+<div class="section" id="enhancing-the-generated-jmeter-script">
+<h2>Enhancing the generated jmeter script<a class="headerlink" href="#enhancing-the-generated-jmeter-script" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-to-expect">
+<h3>What to expect ?<a class="headerlink" href="#what-to-expect" title="Permalink to this headline">¶</a></h3>
+<p>Converted jmeter script will have</p>
+<ul class="simple">
+<li>predefined varaibles linked to the test plan</li>
+<li>pre-populated parameters into http request defaults</li>
+<li>CSV data set with parameter names for all the parameters reading data from file</li>
+<li>A loop controller with iteration count set to 1</li>
+<li>samples as per the test flow in Loadrunner</li>
+<li>Parameterization, correlation, response assertions, lr_think_time with appropraiate conditions</li>
+<li>If and while loops with true as a condition</li>
+</ul>
+</div>
+<div class="section" id="changes-to-do">
+<h3>Changes to do<a class="headerlink" href="#changes-to-do" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Custom parameters types listed on the console are to be added manually</li>
+<li>Parameters in web_custom_requests are to be handeled manually. i.e; replace {param1} to ${param1}</li>
+<li>Any custom code or conditions in if/while</li>
+<li>Listeners are to be added</li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<h3>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>web_custom_requests with body extending to multiple lines are converted with less double quotes and more /</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+    
+
+    
+  </body>
+</html>
