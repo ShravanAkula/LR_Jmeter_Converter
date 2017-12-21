@@ -1,15 +1,15 @@
 # LR_Jmeter_Converter
-**LoadRunner to JMeter converter V1.1  is built on python2.7.**
+**LoadRunner to JMeter converter V2.0  is built on python2.7.**
 
 
 **How to use the converter:**
 
-1	Download the zip file
-2.	Unzip to any desired location
-3.	Run “LR_Parsing.exe”
-4.	Provide absolute path to the Loadrunner script
-5.	Provide a location to save the logs and converted file
-6.	Converted requests are saved to “converted_lines.log”, the jmx is saved as output.jmx
+* Download the zip file
+* Unzip to any desired location
+* Run “LR_Parsing.exe”
+* Provide absolute path to the Loadrunner script
+* Provide a location to save the logs and converted file
+* Converted requests are saved to “converted_lines.log”, the jmx is saved as output.jmx
 
 **NOTE: warning/Errors will be displayed on the console and will not be saved to file**
 
@@ -37,6 +37,8 @@ Note: correlation and text checks are added as a parent node to the request.
 3.	Reads complete Loadrunner file to process all the .c files 
 4.	CSV dataset read will be created with param names and file linking
 5.	Parameters are added to http_request_defaults and test plan to ease parameterization
+6.	Support for Delete, PUT methods in http request
+7.	longer LB, Rb are handelled more efficiently
 
 
 **Reach to Shravanakula@ymail.com for more details or enhancements**
