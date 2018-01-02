@@ -13,8 +13,6 @@
 
 **NOTE: warning/Errors will be displayed on the console and will not be saved to file**
 
-On successful conversion, arrange the requests as per the desired flow.
-
 Note: correlation and text checks are added as a parent node to the request.
 	Error handling will be improved in next versions.
 	
