@@ -1,5 +1,5 @@
 # LR_Jmeter_Converter
-**LoadRunner to JMeter converter V2.0  is built on python2.7.**
+**LoadRunner to JMeter converter V3.0  is built on python2.7.**
 
 
 **How to use the converter:**
