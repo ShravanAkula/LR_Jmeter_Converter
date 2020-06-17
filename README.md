@@ -4,9 +4,8 @@
 
 **How to use the converter:**
 
-* Download the zip file
-* Unzip to any desired location
-* Run “LR_Parsing.exe”
+* Download the exe (LR_to_jmeter_v2.exe)
+* Run “LR_to_jmeter_v2.exe”
 * Provide absolute path to the Loadrunner script
 * Provide a location to save the logs and converted file
 * Converted requests are saved to “converted_lines.log”, the jmx is saved as output.jmx
