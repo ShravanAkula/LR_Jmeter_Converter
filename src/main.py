@@ -109,14 +109,9 @@ for i1 in lr_defs.http_request().lr_web_elements['replace_url_from']:
     processedfile = re.sub(str(i1) + '=h(.*?)://(.*?)/', str(i1) +'=/', processedfile, )
 
 for items in lr_defs.http_request().lr_web_elements['nokeys']:
-    processedfile_matches = re.findall(items + "(.*?)\n", processedfile)
-
-    print "################################### - start ------------------"
-    print items, processedfile_matches
-    print "################################### - END ------------------"
+    processedfile_matches = re.findall(items + "(.*?);", processedfile)
 
     for values in processedfile_matches:
-        print str(items + values)
         re.sub(items + values + "(.*?)\n", items + values, processedfile)
 
 
@@ -179,7 +174,7 @@ try:
 
     fin.close()
 
-    parameter_processing.parameter_processing(doc=doc, parameters_list=create_JMX.jmx_creation().get_parameters_list()).replacing_lr_parameters()
+    parameter_processing.parameter_processing(doc=doc, parameters_list=create_JMX.jmx_creation().get_parameters_list(), output_file=outputfile).replacing_lr_parameters()
 
     fo.close()
     #doc.write(outputfile + '\outFile.jmx', xml_declaration=True, encoding='utf-8')
