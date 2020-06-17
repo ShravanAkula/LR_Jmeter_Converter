@@ -6,7 +6,7 @@ class parameter_processing:
     def __init__(self, doc, parameters_list):
         self.doc = doc
         self.parameters_list = list(set(parameters_list))
-        self.outputfile = "c:/users/akush02/desktop"
+        self.outputfile = ""
 
     def replacing_lr_parameters(self):
         #for parameters in self.parameters_list:
