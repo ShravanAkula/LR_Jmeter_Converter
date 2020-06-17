@@ -3,10 +3,10 @@ from definitions import xmlgen
 
 class parameter_processing:
 
-    def __init__(self, doc, parameters_list):
+    def __init__(self, doc, parameters_list, output_file):
         self.doc = doc
         self.parameters_list = list(set(parameters_list))
-        self.outputfile = ""
+        self.outputfile = output_file
 
     def replacing_lr_parameters(self):
         #for parameters in self.parameters_list:
