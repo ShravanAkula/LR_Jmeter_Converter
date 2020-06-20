@@ -36,5 +36,3 @@ Note: correlation and text checks are added as a parent node to the request.
 5.	Parameters are added to http_request_defaults and test plan to ease parameterization
 6.	Support for Delete, PUT methods in http request
 7.	longer LB, Rb are handelled more efficiently
-	
-**Reach to Shravanakula@ymail.com for more details or enhancements**
